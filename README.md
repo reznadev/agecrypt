@@ -13,12 +13,14 @@ A minimalistic CLI tool for encrypting and decrypting files and folders using [a
 ## Installation
 
 ### Option 1: Tap and Install
+
 ```bash
 brew tap reznadev/agecrypt
 brew install agecrypt
 ```
 
 ### Option 2: Direct Install
+
 ```bash
 brew install reznadev/agecrypt/agecrypt
 ```
@@ -26,6 +28,7 @@ brew install reznadev/agecrypt/agecrypt
 ## Prerequisites
 
 Make sure you have `age` installed:
+
 ```bash
 brew install age
 ```
@@ -33,38 +36,38 @@ brew install age
 ## Usage
 
 ### Generate a keypair
+
 ```bash
 age-keygen -o key.txt
 # This creates a private key file and displays the public key
 ```
 
 ### Encrypt a file
+
 ```bash
 agecrypt -e document.pdf age1abc...xyz
-# Creates: document.pdf.age
 ```
 
 ### Encrypt a folder
+
 ```bash
 agecrypt -e my_folder age1abc...xyz [--clean]
-# Creates: my_folder.tar.gz.age
-# --clean removes the intermediate .tar.gz file
 ```
 
 ### Decrypt a file
+
 ```bash
 agecrypt -d document.pdf.age path_to_key.txt
-# Restores: document.pdf
 ```
 
 ### Decrypt a folder
+
 ```bash
 agecrypt -d my_folder.tar.gz.age path_to_key.txt [--clean]
-# Extracts the original folder
-# --clean removes the intermediate .tar.gz file
 ```
 
 ### Help and Version
+
 ```bash
 agecrypt --help
 agecrypt --version
