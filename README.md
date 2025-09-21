@@ -12,25 +12,50 @@ A minimalistic CLI tool for encrypting and decrypting files and folders using [a
 
 ## Installation
 
-### Option 1: Tap and Install
+### macOS
+
+#### Option 1: Tap and Install
 
 ```bash
 brew tap reznadev/agecrypt
 brew install agecrypt
 ```
 
-### Option 2: Direct Install
+#### Option 2: Direct Install
 
 ```bash
 brew install reznadev/agecrypt/agecrypt
 ```
 
-## Prerequisites
+#### Prerequisites
 
 Make sure you have `age` installed:
 
 ```bash
 brew install age
+```
+
+### Linux
+
+#### Install age dependency
+
+```bash
+# Ubuntu/Debian
+sudo apt install age
+
+# Or download from https://github.com/FiloSottile/age/releases
+```
+
+#### Install agecrypt
+
+```bash
+# Clone the repository
+git clone https://github.com/reznadev/agecrypt.git
+cd agecrypt
+
+# Make executable and install
+chmod +x agecrypt.sh
+sudo cp agecrypt.sh /usr/local/bin/agecrypt
 ```
 
 ## Usage
