@@ -1,6 +1,6 @@
-# agecrypt
+![alt text](age_image.png)
 
-A minimalistic CLI tool for encrypting and decrypting files and folders using [age](https://age-encryption.org/).
+`agecrypt` - A minimalistic CLI tool for encrypting and decrypting files and folders using [age](https://age-encryption.org/).
 
 ## Features
 
